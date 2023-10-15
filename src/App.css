@@ -1,0 +1,10 @@
+.AppDark {
+  background-color:#150f16;
+  
+}
+.App{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
