@@ -1,5 +1,4 @@
 //app
-
 import {Navbar}  from './components/navBar.jsx';
 import {Header} from './components/Header.jsx';
 import {BlueSection} from './components/blueSection.jsx';
@@ -12,9 +11,18 @@ import { useState} from "react";
 import './App.css';
 
 function App() {
-  const [lightMode, setLightMode] = useState(true)
+  const [lightMode, setLightMode] = useState(true);
+  const [loading, setLoading] = useState(true)
+  const loadingScreen = document.getElementById("loading");
+  if(loadingScreen){
+    setTimeout(()=>{
+      loadingScreen.style.display = "none";
+      setLoading(false)
+    }, 2500)
+  }
   return (
-    <div className={ lightMode ? "App" : "App AppDark"}>
+    !loading &&
+      <div className={ lightMode ? "App" : "App AppDark"}>
       <Navbar lightMode={lightMode} setLightMode={setLightMode}/>
       <Header lightMode={lightMode}/>
       <BlueSection lightMode={lightMode}/>
@@ -23,7 +31,7 @@ function App() {
       <Carousel lightMode={lightMode}/>
       <Footer/>
     </div>
-  );
+    );
 }
 
 export default App;

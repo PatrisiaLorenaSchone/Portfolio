@@ -20,7 +20,7 @@ export const Header = (props) =>{
                     </div>
                     <a href="../assets/holdingCandle.png" download={candle} target="_blank" className="my-btn">Download CV</a>
                 </div>
-                <iframe title="PatriciaLorenaAnimation"  src="https://lottie.host/?file=ce4fad59-27b6-4d32-96ec-01ff6f6da70c/sptTNyR8JT.json"></iframe>
+                <iframe className={props.lightMode ? '' : 'darkIframe'}  title="PatriciaLorenaAnimation"  src="https://lottie.host/?file=ce4fad59-27b6-4d32-96ec-01ff6f6da70c/sptTNyR8JT.json"></iframe>
             </header>
     )
 }

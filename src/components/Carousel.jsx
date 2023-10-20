@@ -4,6 +4,7 @@ import Macbook from '../assets/macbook.png';
 import MH from '../assets/MH.gif'
 import logoMH from '../assets/logo.jpeg'
 import logoMG from '../assets/logoMG.png'
+import logoLL from '../assets/logoLine.png'
 import { useState } from 'react';
 import stiker1 from '../assets/wave.png';
 import stiker2 from '../assets/pointer.png';
@@ -32,11 +33,12 @@ export const Carousel=({lightMode}) =>{
     stikerClass: 'projectPointer'
     },
     {
-    title: "Burger restaurant",
-    description: `Burgers is a fictive restaurant that sells the best burgers. I made this project because
-     I wanted to practice my React skills and improve my abilities in coding css animations. `,
+    title: "Little Lemon Restaurant",
+    description: `I started this website as part of a graded assigment during "Meta Frontend Developer" course. 
+    Being very pleased with the result, I decided to take the development further and transform it into 
+    a beautiful web aplication model.`,
     projectImage: MH,
-    logo:logoMH,
+    logo:logoLL,
     stiker: stiker3,
     stikerClass: 'projectTalking'
     }
@@ -70,7 +72,7 @@ export const Carousel=({lightMode}) =>{
             <a target='blank' href='https://xn--schnembelhaus-kmbd.com/index.html'><button className='my-btn'>Go to the website</button></a>
             <img className={project.stikerClass} height={150} src={project.stiker} alt="Patricia Lorena stiker" />
           </div>
-          <div className='carouselImage'>
+          <div className={lightMode ? 'carouselImage' : "carouselImage carouselImageDark"}>
             <img className='carouselImage'  src={Macbook} alt="Project" />
             <img className='ProjectGif' src={project.projectImage} alt="" />
           </div>

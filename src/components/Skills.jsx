@@ -53,8 +53,8 @@ export const Skills = ({lightMode})=>{
                 <small>*Common European Framework of Reference</small>
             </div>
         </div>
-        <div>
-          <h3 className="my-other-skills">Other Skills</h3>
+        <div className="my-other-skills">
+          <h3>Other Skills</h3>
           <p>Atention to detail, creativity, </p>
         </div>
        </div>
