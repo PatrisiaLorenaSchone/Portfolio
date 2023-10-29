@@ -87,8 +87,8 @@ export const Carousel=() =>{
             <a target='blank' href={project.link}><button className='my-btn'>Go to the website</button></a>
             <img className={project.stikerClass} height={150} src={project.stiker} alt="Patricia Lorena stiker" />
           </div>
-          <div className={lightMode ? 'carouselImage' : "carouselImageDark carouselImage "}>
-            <img className='carouselImage'  src={Macbook} alt="Project" />
+          <div style={{position:"relative", margin:"auto"}}>
+            <img src={Macbook} className={lightMode ? 'carouselImage' : "carouselImageDark carouselImage "}   alt="Project" />
             <img className='ProjectGif' src={project.projectImage} alt="" />
           </div>
         </div>
