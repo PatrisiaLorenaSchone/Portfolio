@@ -88,7 +88,7 @@ export const Carousel=() =>{
             <img className={project.stikerClass} height={150} src={project.stiker} alt="Patricia Lorena stiker" />
           </div>
           <div style={{position:"relative", margin:"auto"}}>
-            <img src={Macbook} className={lightMode ? 'carouselImage' : "carouselImageDark carouselImage "}   alt="Project" />
+            <img src={Macbook} className={lightMode ? 'carouselImage' : "carouselImageDark"}   alt="Project" />
             <img className='ProjectGif' src={project.projectImage} alt="" />
           </div>
         </div>
