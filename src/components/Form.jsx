@@ -85,14 +85,14 @@ function isTelValid(){
   }
 }
 function isFirstNameValid(){
-  if(data.firstName.length >=2 && data.firstName.match(/^[a-z_-]{2,20}$/)){
+  if(data.firstName.length >=2 && data.firstName.match(/^[A-Za-z.\s_-]{2,20}$/)){
     return true
   } else {
     return false
   }
 }
 function isLastNameValid(){
-  if(data.lastName.length >=2 && data.lastName.match(/^[a-z_-]{2,20}$/)){
+  if(data.lastName.length >=2 && data.lastName.match(/^[A-Za-z.\s_-]{2,20}$/)){
     return true
   } else {
     return false
@@ -112,7 +112,6 @@ return(
     onChange={handleChange} 
     id="firstName" type="text" 
     required
-    pattern="[a-z]"
     className={!isFirstNameValid() && isTouched.firstName ? "invalid" : "valid"}
     />
   </div>
@@ -127,7 +126,6 @@ return(
     onChange={handleChange}
     id="lastName" type="text" 
     required
-    pattern="[a-z]"
     className={!isLastNameValid() && isTouched.lastName ? "invalid" : "valid"}
     />
   </div>
@@ -156,7 +154,6 @@ return(
     onChange={handleChange}
     id="phoneNumber" type="tel"
     required
-    pattern="[0-9]"
     className={!isTelValid() && isTouched.tel ? "invalid" : "valid"}
     />
   </div>
