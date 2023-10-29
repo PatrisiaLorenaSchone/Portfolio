@@ -362,6 +362,7 @@ iframe{
   justify-content: center;
   flex-wrap: wrap;
   padding: 0px 35px;
+  overflow: hidden;
 }
 .my-skills-list{
   display: flex;
@@ -489,7 +490,7 @@ iframe{
 .carouselCard button{
   margin: 0 30px;
 }
-.carouselImage{
+.carouselImage, .carouselImageDark{
   position: relative;
   margin: auto;
   width: 520px;
@@ -912,12 +913,7 @@ ul h3{
 .candleStikerText{
   display: block;
 }
-@media only screen and (min-width: 1000px) {
-  .candleStikerText{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
+
 .graduate{
   margin-bottom: -55px;
   align-self:baseline;
@@ -995,86 +991,6 @@ ul h3{
 		transform: translateX(-6px) rotate(-1.2deg);
 	}
 }
-@media only screen and (max-width: 700px){
-  .projectWave{
-    position: absolute;
-    left: 0;
-    height: 100px;
-    top: 100px;
-}
-  .projectPointer{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 130px;
-  }}
-  @media only screen and (max-width: 400px){
-    .carouselContainer{
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .my-main-title{
-      font-size: 3.9em;
-    }
-  }
-  @media only screen and (max-width: 1100px) {
-    .my-main-title{
-      font-size: 2.8em;
-    }
-  }
-  @media only screen and (max-width: 900px) {
-    .my-navbar .upNav{
-      display: none;
-    }
-    .my-navbar .sideNav{
-      display: flex;
-    }
-    .hamburgerMenu{
-      display: block;
-    }
-    .carouselContainer{
-      width: 98%;
-    }
-    header{
-      padding-bottom: 0;
-      padding-right: 8%;
-    }
-    .hello{
-      top: 30%;
-      height: 130px;
-    }
-    .my-main-title{
-      font-size: 2.2em;
-      margin-left: 23px;
-    }
-    .carouselImage{
-      margin: auto;
-      width: 330px;
-      height: 360px;
-    }
-    .ProjectGif{
-      top: 65px;
-      left: 34.5px;
-      height: 166px;
-      width: 262px;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    button {
-      background-color: #f9f9f9;
-    }
-  }
-
 
 @keyframes move-dot1 {
     0% {
@@ -1270,3 +1186,89 @@ ul h3{
   width: 50%;
   background: blue;
 } */
+@media only screen and (min-width: 1000px) {
+  .candleStikerText{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width: 700px){
+  .projectWave{
+    position: absolute;
+    left: 0;
+    height: 100px;
+    top: 100px;
+}
+  .projectPointer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 130px;
+  }}
+  @media only screen and (max-width: 400px){
+    .carouselContainer{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .my-main-title{
+      font-size: 3.9em;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .my-main-title{
+      font-size: 2.8em;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .my-navbar .upNav{
+      display: none;
+    }
+    .my-navbar .sideNav{
+      display: flex;
+    }
+    .hamburgerMenu{
+      display: block;
+    }
+    .carouselContainer{
+      width: 98%;
+    }
+    header{
+      padding-bottom: 0;
+      padding-right: 8%;
+    }
+    .hello{
+      top: 30%;
+      height: 130px;
+    }
+    .my-main-title{
+      font-size: 2.2em;
+      margin-left: 23px;
+    }
+    .carouselImage, .carouselImageDark{
+      margin: auto;
+      width: 330px;
+      height: 360px;
+    }
+    .ProjectGif{
+      top: 65px;
+      left: 34.5px;
+      height: 166px;
+      width: 262px;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+
