@@ -41,7 +41,6 @@ function isFormValid(){
   if(isFirstNameValid 
     &&isLastNameValid
     && isEmailValid
-    && data.tel.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{0,6}$/)
     && isTelValid
     && data.message.length > 5
     && data.agreement
