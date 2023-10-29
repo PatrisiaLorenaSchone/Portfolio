@@ -53,23 +53,6 @@ function isFormValid(){
   }
 }
 
-function handleSubmit(){
-  fetch("https://formsubmit.co/ajax/patriciaschone23@gmail.com", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-        ...data
-    })
-})
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error));
-    
-  setMessage((prevMessage)=> !prevMessage);
-};
 function isEmailValid(){
   if(data.email.length > 3 && data.email.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
     return true
@@ -78,7 +61,7 @@ function isEmailValid(){
   }
 }
 function isTelValid(){
-  if(data.tel.length > 3 && data.tel.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{1,6}$/)){
+  if(data.tel.length > 3 && data.tel.match(/^[\+]?[(]?[0-9]{2}[)]?[-\s\.]?[0-9]{2}[-\s\.]?[0-9]{1,6}$/)){
     return true
   } else {
     return false
@@ -98,6 +81,24 @@ function isLastNameValid(){
     return false
   }
 }
+
+function handleSubmit(){
+  fetch("https://formsubmit.co/ajax/8e4a91b50ba6870af076f82983c9deb4", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        ...data
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+    
+  setMessage((prevMessage)=> !prevMessage);
+};
 
 return(
  <form  action="" method="POST" onSubmit={handleSubmit}>
