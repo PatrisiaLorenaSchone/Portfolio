@@ -98,9 +98,9 @@ export const Carousel=() =>{
     <div id="projects" className="carouselSection">
       <h2 className="my-secondary-title"><span>🌟 </span> Projects</h2>
       <div className='carouselContainer'>
-        <button className='carouselBtn' onClick={prev}>&#9664; </button>
+        <button className='carouselBtn carouselBtnLeft' onClick={prev}>&#9664; </button>
         {projects[index]}
-        <button onClick={next} className='carouselBtn'> &#9654;</button>
+        <button onClick={next} className='carouselBtn carouselBtnRight'> &#9654;</button>
       </div>
     </div>
   );
