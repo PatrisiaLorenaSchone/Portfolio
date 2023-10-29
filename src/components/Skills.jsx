@@ -1,4 +1,5 @@
 //skills
+import React from "react"
 import it from "../assets/ita.svg"
 import us from "../assets/usa.svg"
 import ro from "../assets/rou.svg"
@@ -8,25 +9,27 @@ import checkBox from "../assets/checkBox.png"
 import {LanguageChart} from "./languageChart.jsx";
 import {ComputerChart} from "./computerChart.jsx"
 import {useState} from "react"
+import { ThemeContext } from "../App"
 
-export const Skills = ({lightMode})=>{
+export const Skills = ()=>{
   const[computerList, setComputerList] = useState(false);
   const[languageList, setLanguageList] = useState(false);
 
+  const {lightMode} = React.useContext(ThemeContext)
+
     return(
        <div id="skills" className={lightMode ? "skillsSection" : "skillsSection skillsSectionDark"}>
-        <h2 className="my-secondary-title">My Skills</h2>
+        <h2 className="my-secondary-title"><span>🚀 </span> My Skills</h2>
         <div className="skillsCardsContainer">
             <div onClick={()=>{setComputerList(!computerList)}} className={languageList ? "hidden" : "my-skills-list"}>
                 <h3>Computer Skills</h3>
                 <div className="skillsCard">
                 <ul>
-                  <li>-HTML CSS</li>
-                  <li>-JavaScript</li>
-                  <li>-React.js</li>
-                  <li>-BootStrap</li>
-                  <li>-Figma</li>
-                  <li>-GitHUB</li>
+                  <li><b>Fundamentals: </b>HTML, CSS, JavaScript</li>
+                  <li><b>Libraries: </b>React.js</li>
+                  <li><b>Frameworks</b>BootStrap</li>
+                  <li><b>Design: </b>Figma</li>
+                  <li><b>Extra: </b>GitHUB, VisualStudio</li>
                 </ul>
                 {computerList && <ComputerChart />}
                 </div>
@@ -38,15 +41,10 @@ export const Skills = ({lightMode})=>{
                 <div className="skillsCard">
                   <ul>
                     <li><img height={23} alt="U.S.A. flag" src={us}/> <b>English</b> - Advanced</li>
-                    <hr/>
                     <li><img height={23} alt="Italian flag" src={it}/> <b>Italian</b> - Advanced</li>
-                    <hr/>
                     <li><img height={23} alt="French flag" src={fr}/> <b>French</b> - Intermediate</li>
-                    <hr/>
                     <li><img height={23} alt="Germany flag" src={de}/> <b>German</b> - Beginner</li>
-                    <hr/>
                     <li><img height={23} alt="Romania flag" src={ro}/> <b>Romanian</b> - Native</li>
-                    <hr/>
                   </ul>
                   {languageList && <LanguageChart/>}
                 </div>

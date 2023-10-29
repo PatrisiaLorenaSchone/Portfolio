@@ -9,7 +9,7 @@ export const Footer=()=> {
 
     return(
         <footer id="contact">
-            <h2>Contact </h2>
+            <h2><span>📬 </span> Contact </h2>
             <div className="footerContent">
                 <div>
                 <ul className="my-list">

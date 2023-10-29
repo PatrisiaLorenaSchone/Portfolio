@@ -1,10 +1,13 @@
 //pinksection
+import React from "react"
 import selfie from "../assets/gr3.png"
+import { ThemeContext } from "../App"
 
-export const PinkSection = (props) =>{
+export const PinkSection = () =>{
+  const {lightMode} = React.useContext(ThemeContext)
     return(
-      <div className={props.lightMode ? "my-pink-section" : "my-pink-section my-pink-sectionDark"}>
-          <h2 id="aboutMe">About me</h2>
+      <div className={lightMode ? "my-pink-section" : "my-pink-section my-pink-sectionDark"}>
+          <h2 id="aboutMe"><span>🎀 </span> About me</h2>
             <div className="my-about">
               <img height={"390px"} width={"390px"} src={selfie} className="my-selfie-img" alt=" Patricia Lorena selfie" />
               <div>

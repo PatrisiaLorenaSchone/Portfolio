@@ -1,14 +1,17 @@
 //navbar
-
+import React from "react"
 import {ToggleButton} from "./toggleMode.jsx"
 import hamburgerMenu from "../assets/hamburger.svg"
 import closeButton from "../assets/close.svg"
 import {useState} from "react"
-export const Navbar =({lightMode, setLightMode})=>{
+import { ThemeContext } from "../App.jsx"
+
+export const Navbar =()=>{
     const [sideNav, setSideNav] = useState(false)
     function toggleNav(){
         setSideNav(!sideNav);
     }
+    const {lightMode} = React.useContext(ThemeContext)
     return(
         <div  className="my-navbar">
             <img onClick={toggleNav} src={ sideNav ? closeButton : hamburgerMenu} alt="hamburger menu" height="50" width="50" className="hamburgerMenu"/>
@@ -26,7 +29,7 @@ export const Navbar =({lightMode, setLightMode})=>{
                     <a href="#projects" className="my-nav-btn my-proj-btn">Projects</a>
                     <a href="#contact" className="my-nav-btn my-con-btn">Contact</a>
             </ul>
-            <ToggleButton lightMode={lightMode} setLightMode={setLightMode}/>
+            <ToggleButton/>
         </div>
     )
 }

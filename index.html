@@ -5,6 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+    .loading{
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      right: 30%;
+      color: #3d96e9;
+      text-align: center;
+    }
+    .loading img{
+     animation: slideLeft 2s ease 0s infinite normal forwards;
+    }
+    @keyframes slideLeft {
+	  0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	  }
+    100% {
+		opacity: 1;
+		transform: translateX(0);
+	  }
+    }
+    </style>
   </head>
   <body>
     <div id="loading" class="loading">
