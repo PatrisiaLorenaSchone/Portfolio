@@ -5,7 +5,7 @@ import stiker from "../assets/graduate.png"
 import stiker2 from "../assets/gradShowing.png"
 import { ThemeContext } from "../App.jsx"
 
-const BlueSection = ()=>{
+export const BlueSection = ()=>{
     const {lightMode} = React.useContext(ThemeContext)
     return(
         <div>
@@ -18,4 +18,3 @@ const BlueSection = ()=>{
         </div>
     )
 }
-export {BlueSection}
