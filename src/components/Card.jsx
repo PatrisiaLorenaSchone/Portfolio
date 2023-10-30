@@ -2,7 +2,9 @@
 
 
 import certificate1 from "../assets/certificate1.png";
-import certificate2 from "../assets/certificate2.jpg"
+import certificate2 from "../assets/certificate2.jpg";
+import certificate3 from "../assets/certificate3.png";
+
 let data = [
     {title: "Meta Front-End Developer",
     id: 1,
@@ -28,10 +30,10 @@ let data = [
         link: "",
         border: "2px solid #0d6efd"
     },
-    {title: "title",
+    {title: "React Native Specialization",
     id: 4,
         description: "",
-        // image: "",
+        image: certificate3,
         button: {backgroundColor: "#6c757d"},
         link: "",
         border: "2px solid #0d6efd"
