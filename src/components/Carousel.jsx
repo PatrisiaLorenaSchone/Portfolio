@@ -1,6 +1,6 @@
 //carousel
 import React from 'react';
-import Macbook from '../assets/macbook.png';
+import Macbook from '../assets/Macbook1.png';
 import MH from '../assets/MH.gif'
 import LL from '../assets/LL.gif'
 import logoMH from '../assets/logo.jpeg'
