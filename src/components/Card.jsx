@@ -50,7 +50,7 @@ useEffect(()=>{
 })
     let certificates = data.map(certificate => {
         return (
-            <div className={props.lightMode ? "my-card" : "my-cardDark"} key={certificate.id}>
+            <div className={props.lightMode ? "my-card" : "my-cardDark my-card"} key={certificate.id}>
                 <img className="cardImg" style={{border: certificate.border}} height={"200px"} alt="diploma" src={certificate.image}></img>
                 <h3 className="card-title">{certificate.title}</h3>
                 <p>{certificate.description}</p>
