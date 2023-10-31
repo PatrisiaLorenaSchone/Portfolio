@@ -1,9 +1,10 @@
 //Card
 
-
+import {useEffect} from "react"
 import certificate1 from "../assets/certificate1.png";
 import certificate2 from "../assets/certificate2.jpg";
 import certificate3 from "../assets/certificate3.png";
+import VanillaTilt from "vanilla-tilt"
 
 let data = [
     {title: "Meta Front-End Developer",
@@ -41,6 +42,12 @@ let data = [
     ]; 
 
 export const CerificateCard = (props) =>{
+useEffect(()=>{
+    VanillaTilt.init(document.querySelectorAll(".my-card"),{
+        max: 20,
+        speed: 10,
+    })
+})
     let certificates = data.map(certificate => {
         return (
             <div className={props.lightMode ? "my-card" : "my-cardDark"} key={certificate.id}>
