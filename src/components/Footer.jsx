@@ -1,6 +1,6 @@
 
 //footer
-
+import { Link } from "react-router-dom";
 import {Form} from "./Form.jsx";
 import envelope from "../assets/envelope.png"
 import {useState} from "react"
@@ -13,16 +13,10 @@ export const Footer=()=> {
             <div className="footerContent">
                 <div>
                 <ul className="my-list">
-                     <li>Terms</li>
-                     <li>Privacy</li>
-                     <li>Help</li>
-                     <li>Accessibility</li>
-                     <li>Contact</li>
-                 </ul>
-                 <ul className="my-list">
-                     <li>About</li>
-                     <li>Feedback</li>
-                     <li>Prices</li>
+                    <li><Link to="/info">Terms and Conditions</Link></li>
+                    <li><Link to="/info">Privacy</Link></li>
+                    <li><Link to="/info">Accessibility</Link></li>
+                    <li><Link to="/info">Additional informations</Link></li>
                  </ul>
                 </div>
                 {message 

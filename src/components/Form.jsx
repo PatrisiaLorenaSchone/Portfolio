@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Link } from "react-router-dom";
 
 export const  Form = ({setMessage})=> {
 
@@ -192,7 +193,7 @@ return(
     onChange={handleChange}
     id="agreement" type="checkbox" 
     required/>
-    <label className="agreement"  htmlFor="agreement"> *I agree to the <a target="blank" href="https://mail.google.com/mail/u/0/#inbox">Terms and Conditions</a> of submitting this Form </label>
+    <label className="agreement"  htmlFor="agreement"> *I agree to the <Link to="/info" target="blank">Terms and Conditions</Link> of submitting this Form </label>
   </div>
   {/* <p className="agreement">All the fields are mandatory</p> */}
   <button disabled={!isFormValid()} className="submitBtn my-btn" type="submit">Submit message</button>

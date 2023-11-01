@@ -597,12 +597,16 @@ footer{
   font-weight: bolder;
   font-size: 1.1em;
 }
-.my-list li{
+.my-list a{
   color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
   cursor: pointer;
+  font-weight: lighter;
+  transition: 0.5s;
 }
-.my-list li:hover{
+.my-list a:hover{
   color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.8px;
 }
 .formAfter{
   display: flex;
@@ -718,7 +722,39 @@ textarea{
 .valid{
   color: #006d09;
 }
-
+/* info page*/
+.infoPage{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px
+}
+.infoCard{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  background-color: lavender;
+  margin:auto;
+  border-radius: 5px;
+  border: 1px solid plum;
+  padding: 50px 23px 20px 23px;
+  width: 80%;
+  max-width: 1000px;
+}
+.infoCard p{
+  text-align: left;
+  text-indent: 35px;
+}
+.infoCard h3{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  color:#232323;
+  justify-content: center;
+}
+.infoCard button{
+  margin-top: 30px;
+}
 /* media -to be reviewd*/
 
 @keyframes button-float {
