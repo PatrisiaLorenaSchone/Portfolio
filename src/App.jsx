@@ -1,13 +1,12 @@
 //app
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import {Navbar}  from './components/navBar.jsx';
-import {Footer} from './components/Footer.jsx';
 // import Footer from "./components/Footer"
 import { useState} from "react";
 import './App.css';
 import Homepage from './pages/Homepage.jsx';
 import Informationpage from './pages/Informationpage.jsx';
+import Layout from './pages/Layout.jsx';
 
 
 const ThemeContext = React.createContext()
@@ -30,12 +29,13 @@ export default function App() {
     <BrowserRouter>
     <ThemeContext.Provider value={{lightMode, toggleTheme}}>
       <div className={ lightMode ? "App" : "App AppDark"}>
-      <Navbar/>
       <Routes>
-        <Route path="/" element={<Homepage/>}/>
+        <Route path="/" element={<Layout/>}>
+        <Route index element={<Homepage/>}/>
         <Route path="/info" element={<Informationpage/>}/>
+        <Route path="*" element={<h1>page not found</h1>}/>
+        </Route>
       </Routes>
-      <Footer/>
     </div>
     </ThemeContext.Provider>
     </BrowserRouter>

@@ -23,7 +23,7 @@ let data = [
         link: "https://skl.sh/44fYL3M",
         border: "2px solid green"
     },
-    {title: "Scrimba Frontend Developer",
+    {title: "React Basics - React Advanced. Scrimba",
     id: 3,
         description: "",
         image: certificate2,
@@ -44,7 +44,7 @@ let data = [
 export const CerificateCard = (props) =>{
 useEffect(()=>{
     VanillaTilt.init(document.querySelectorAll(".my-card"),{
-        max: 20,
+        max: 18,
         speed: 10,
     })
 })

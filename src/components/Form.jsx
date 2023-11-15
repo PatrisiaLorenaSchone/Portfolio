@@ -193,7 +193,7 @@ return(
     onChange={handleChange}
     id="agreement" type="checkbox" 
     required/>
-    <label className="agreement"  htmlFor="agreement"> *I agree to the <Link to="/info" target="blank">Terms and Conditions</Link> of submitting this Form </label>
+    <label className="agreement"  htmlFor="agreement"> *I agree to the <Link to="https://www.patriciaschone.com/info" target="_blank">Terms and Conditions</Link> of submitting this Form </label>
   </div>
   {/* <p className="agreement">All the fields are mandatory</p> */}
   <button disabled={!isFormValid()} className="submitBtn my-btn" type="submit">Submit message</button>

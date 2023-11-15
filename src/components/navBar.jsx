@@ -1,17 +1,16 @@
 //navbar
 import React from "react"
-import {ToggleButton} from "./toggleMode.jsx"
+import {ToggleButton} from "./ToggleButton.jsx"
 import hamburgerMenu from "../assets/hamburger.svg"
 import closeButton from "../assets/close.svg"
 import {useState} from "react"
-import { ThemeContext } from "../App.jsx"
 
 export const Navbar =()=>{
     const [sideNav, setSideNav] = useState(false)
     function toggleNav(){
         setSideNav(!sideNav);
     }
-    const {lightMode} = React.useContext(ThemeContext)
+
     return(
         <div  className="my-navbar">
             <img onClick={toggleNav} src={ sideNav ? closeButton : hamburgerMenu} alt="hamburger menu" height="50" width="50" className="hamburgerMenu"/>

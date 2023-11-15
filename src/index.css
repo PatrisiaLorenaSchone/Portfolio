@@ -44,6 +44,7 @@ body{
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
 }
 .container{
   padding: 8%;
@@ -93,6 +94,12 @@ ul{
   list-style-type: none;
   text-align: left;
   min-width: 150px;
+}
+p{
+  line-height: 1.5;
+  text-align: left;
+  /* text-indent: 20px; */
+
 }
 
 /* Navbar */
@@ -504,7 +511,6 @@ iframe{
 }
 .carouselCard p{
   padding: 0 50px;
-  text-indent: 30px;
 }
 .carouselCard h2{
   padding-top: 55px;
@@ -586,7 +592,6 @@ footer{
   align-content: center;
   list-style: none;
   margin: auto;
-  border-bottom: 1.8px solid rgba(255, 255, 255, 0.1);
   font-size: 0.95rem;
   margin-top: 10px;
 }
@@ -602,6 +607,7 @@ footer{
   letter-spacing: 0.5px;
   cursor: pointer;
   font-weight: lighter;
+  border-bottom: 1.8px solid rgba(255, 255, 255, 0.1);
   transition: 0.5s;
 }
 .my-list a:hover{
@@ -702,10 +708,10 @@ textarea{
   border-radius: 15px;
   filter: drop-shadow(0px 5px 30px rgb(255, 187, 0));
 }
-.facebook-svg:hover svg{
+.coursera-svg:hover svg{
   fill:blue;
   background-color: #c7c7c7;
-  border-radius: 5px;
+  border-radius: 15px;
   filter: drop-shadow(0px 5px 30px rgb(143, 151, 255));
 }
 .tel-svg:hover svg{
@@ -743,14 +749,22 @@ textarea{
 }
 .infoCard p{
   text-align: left;
-  text-indent: 35px;
 }
-.infoCard h3{
+.infoCard h3, .infoCard h4{
   display: flex;
   align-items: center;
   gap:10px;
   color:#232323;
   justify-content: center;
+  padding: 10px;
+}
+.infoCard b {
+  color: rgb(99, 58, 99);
+  text-decoration: underline;
+}
+.infoCard strong{
+  font-weight: 500;
+  color: rgb(143, 9, 143)
 }
 .infoCard button{
   margin-top: 30px;

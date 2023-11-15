@@ -4,9 +4,9 @@ import { BsFillInfoCircleFill } from "react-icons/bs"
 
 export default function  InfoCard({title, children}) {
   return (
-    <div className="infoCard">
+  <div className="infoCard">
     <h3> <BsFillInfoCircleFill/>{title}</h3>
-    <p>{children}</p>
+    <div>{children}</div>
   </div>
   )
 }

@@ -3,7 +3,7 @@ import React from "react"
 import selfie from "../assets/gr3.png"
 import { ThemeContext } from "../App"
 
-export const PinkSection = () =>{
+export default function PinkSection(){
   const {lightMode} = React.useContext(ThemeContext)
     return(
       <div className={lightMode ? "my-pink-section" : "my-pink-section my-pink-sectionDark"}>
