@@ -187,13 +187,10 @@ return(
     </select>
   </div>
   <div className="agreement">
-    <input 
-    checked={data.agreement} 
-    name="agreement"
-    onChange={handleChange}
-    id="agreement" type="checkbox" 
-    required/>
-    <label className="agreement"  htmlFor="agreement"> *I agree to the <Link to="https://www.patriciaschone.com/info" target="_blank">Terms and Conditions</Link> of submitting this Form </label>
+    <p className="agreement">
+      We will never deliberately share your data without your consent.<br/>
+      By submitting this form you agree that the information you provide will be used by Patricia Schone in order to contact you in the future
+    </p>
   </div>
   {/* <p className="agreement">All the fields are mandatory</p> */}
   <button disabled={!isFormValid()} className="submitBtn my-btn" type="submit">Submit message</button>

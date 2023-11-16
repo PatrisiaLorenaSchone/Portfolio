@@ -1,10 +1,11 @@
 
 //footer
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import {Form} from "./Form.jsx";
 import envelope from "../assets/envelope.png"
 import {useState} from "react"
 import {SiCoursera} from "react-icons/si"
+
 export const Footer=()=> {
   const[message, setMessage] = useState(false);
 
@@ -13,12 +14,12 @@ export const Footer=()=> {
             <h2><span>📬 </span> Contact </h2>
             <div className="footerContent">
                 <div>
-                <ul className="my-list">
+                {/* <ul className="my-list">
                     <li><Link to="/info">Terms and Conditions</Link></li>
                     <li><Link to="/info">Privacy</Link></li>
                     <li><Link to="/info">Accessibility</Link></li>
                     <li><Link to="/info">Additional informations</Link></li>
-                 </ul>
+                 </ul> */}
                 </div>
                 {message 
                 ? <div className="formAfter">

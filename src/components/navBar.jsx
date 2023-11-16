@@ -22,11 +22,11 @@ export const Navbar =()=>{
                     <a href="/#contact" className="my-nav-btn my-con-btn">Contact</a>
             </ul>
             <ul className="upNav">
-            <a href="#aboutMe" className="my-nav-btn my-ab-btn">About me</a>
-                    <a href="/#skills" className="my-nav-btn my-sk-btn">Skills</a>
-                    <a href="/#certificates" className="my-nav-btn my-cer-btn">Certificates</a>
-                    <a href="/#projects" className="my-nav-btn my-proj-btn">Projects</a>
-                    <a href="/#contact" className="my-nav-btn my-con-btn">Contact</a>
+                <a href="/#aboutMe" className="my-nav-btn my-ab-btn">About me</a>
+                <a href="/#skills" className="my-nav-btn my-sk-btn">Skills</a>
+                <a href="/#certificates" className="my-nav-btn my-cer-btn">Certificates</a>
+                <a href="/#projects" className="my-nav-btn my-proj-btn">Projects</a>
+                <a href="/#contact" className="my-nav-btn my-con-btn">Contact</a>
             </ul>
             <ToggleButton/>
         </div>

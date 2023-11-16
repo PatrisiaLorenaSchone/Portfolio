@@ -218,7 +218,39 @@ p{
   box-shadow: inset 2px 2px 5px rgb(56, 56, 56);
 }
 
-
+/*Error page*/
+.error-page{
+  padding:20px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-page h3{
+  margin-top: 50px;
+  color: darkorange;
+}
+.error-list li::marker{
+  content: "🚧";
+  font-size: 2.3rem;
+}
+.solution-list li::marker{
+  content: "💡";
+  font-size: 2.3rem;
+}
+.error-page span{
+  font-weight: bold;
+  color:#012904
+}
+.error-page a{
+  font-weight: bold;
+  color:orange;
+  text-decoration: underline;
+}
+.error-page ul, .error-page h1{
+  max-width: 700px;
+}
 
 /* Header */
 
@@ -914,6 +946,15 @@ ul h3{
 }
 .skillsSectionDark .my-other-skills{
   color: rgb(233, 233, 233);
+}
+.dark-error-page{
+  color: whitesmoke;
+}
+.dark-error-page span{
+  color: yellow;
+}
+.dark-error-page img{
+  filter: drop-shadow(2px 2px 50px rgba(255, 0, 0, 0.7))
 }
 /* .carouselCardDark{
   background-color: rgba(0, 0, 0, 0.3);
