@@ -7,7 +7,7 @@ function ErrorPage() {
   return (
     <div className={lightMode ? 'error-page' : 'error-page dark-error-page'}>
       <img height={300} src={errorRobot} alt="error stiker"/>
-      <h1>We are sorry but we could not find the page you are looking for</h1>
+      <h1>We are sorry but we could not find the page you are looking for...</h1>
       <ul className='error-list'>
       <h3>There are many possible causes for a page not to exist. Some of the common ones are:</h3>
         <li>The page was deleted by the owner or administrator of the website.</li>

@@ -187,13 +187,19 @@ return(
     </select>
   </div>
   <div className="agreement">
-    <p className="agreement">
-      We will never deliberately share your data without your consent.<br/>
-      By submitting this form you agree that the information you provide will be used by Patricia Schone in order to contact you in the future
-    </p>
+    <input  
+    type="checkbox"
+    value={data.agreement}
+    name="agreement"
+    onChange={handleChange}
+    id="agreement" 
+    required/>
+    <label for="agreement"  className="agreement">
+      I understand that by submitting this form the information I provide will be used by Patricia Schone in order to contact me in the future
+    </label>
   </div>
-  {/* <p className="agreement">All the fields are mandatory</p> */}
   <button disabled={!isFormValid()} className="submitBtn my-btn" type="submit">Submit message</button>
+   {/* <p className="agreement">We will never deliberately share your data without your consent.</p><br/> */}
  </form>
 )
 }
