@@ -5,7 +5,7 @@ import hamburgerMenu from "../assets/hamburger.svg"
 import closeButton from "../assets/close.svg"
 import {useState} from "react"
 
-export const Navbar =()=>{
+export default function Navbar(){
     const [sideNav, setSideNav] = useState(false)
     function toggleNav(){
         setSideNav(!sideNav);
