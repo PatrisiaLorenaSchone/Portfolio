@@ -3,7 +3,7 @@
 import React from 'react';
 import hey from "../assets/hey1.png"
 import candle from "../assets/holdingCandle.png"
-import cv from "../assets/cv1.pdf"
+import cv from "../assets/cvPatriciaSchone.pdf"
 import { ThemeContext } from "../App"
 
 export const Header = () =>{
@@ -22,7 +22,7 @@ export const Header = () =>{
                            I am open for long-term job offers as well as for short-term projects collaborations.</p>
                     {!lightMode && <img className="candle" height={150} width={110} src={candle} alt="Patricia Lorena as a cartoon holding a candle"/>}
                     </div>
-                    <a href={cv} target='blank' className="my-btn" download>Download CV</a>
+                    <a href={cv} target='_blank' className="my-btn" download>Download CV</a>
                 </div>
                 <iframe className={lightMode ? '' : 'darkIframe'}  title="PatriciaLorenaAnimation"  src="https://lottie.host/?file=ce4fad59-27b6-4d32-96ec-01ff6f6da70c/sptTNyR8JT.json"></iframe>
             </header>

@@ -14,6 +14,7 @@ export const Footer=()=> {
             <h2><span>📬 </span> Contact </h2>
             <div className="footerContent">
                 <div>
+                  {/* <p>Hold tight and get excited! Patricia's dev blog will launch soon</p> */}
                 {/* <ul className="my-list">
                     <li><Link to="/info">Terms and Conditions</Link></li>
                     <li><Link to="/info">Privacy</Link></li>
@@ -54,7 +55,7 @@ export const Footer=()=> {
                    </svg>
                  </a>
             </div>
-            <small className="text-center">Copyrights</small>
+            <small className="text-center">copyrights -Patricia Lorena Schone- Design and Development.	&#169; All Rights reserved</small>
         </footer>
     )
 }

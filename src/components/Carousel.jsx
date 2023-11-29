@@ -1,10 +1,14 @@
 //carousel
 import React from 'react';
 import Macbook from '../assets/Macbook1.png';
-import MH from '../assets/MH.gif'
-import LL from '../assets/LL.gif'
+import Iphone from '../assets/iphone.png'
+import MH from '../assets/MHgif.gif'
+import LL from '../assets/LLgif.gif'
+import OG from '../assets/OG.gif'
+import MG from '../assets/MGgif.gif'
 import logoMH from '../assets/logo.jpeg'
 import logoMG from '../assets/logoMG.png'
+import logoOG from '../assets/logoOG.png'
 import logoLL from '../assets/logoLine.png'
 import { useState } from 'react';
 import stiker1 from '../assets/wave.png';
@@ -14,12 +18,24 @@ import { ThemeContext } from '../App';
 
 export const Carousel=() =>{
   let {lightMode} = React.useContext(ThemeContext)
-  const projectData = [{
+  const projectData = [
+    {
+    title: "Beauty products Shop",
+    description: `I designed and developed this E-commerce website because I wanted to practice the integration of client-side routing. `,
+    features:`conection to the Firebase Database, products sorting and filtering, 
+    dynamic shopping chart, client-side routing`,
+    projectImage: MG,
+    logo:logoMG,
+    stiker: stiker2,
+    stikerClass: 'projectPointer',
+    link:"https://mangata-gallo-three.vercel.app/"
+    },
+    {
     title: "Schone MobelHaus",
     description: `This is the first website I made. 
     I made it in the classic Beginner manner using only CSS, HTML and Vanilla Javascript. 
-    For the design I found inspiration in the company story and I tried to express the joy of a new begining.
-    Schone MobelHaus is a german company specialised in `,
+    For the design I found inspiration in the company story and I tried to express the joy of a new begining.`,
+    features:`form integration`,
     projectImage: MH,
     logo:logoMH,
     stiker: stiker1,
@@ -28,29 +44,20 @@ export const Carousel=() =>{
     },
     {
     title: "Instagram Clone",
-    description: `This is Instagram with a twist, where every post is a work of art. `,
-    projectImage: MH,
-    logo:logoMG,
+    description: `This is Instagram with a twist, where every post is a work of art. 
+    The ui was inspired by one of the solo projects I made at Scrimba to whitch I added the functionalities and the complete design.`,
+    features:`conection to the Firebase Database, user authentification, search input, client-side routing`,
+    projectImage: OG,
+    logo:logoOG,
     stiker: stiker2,
     stikerClass: 'projectPointer',
-    link:"https://little-lemon-6k6k-patrisialorenaschones-projects.vercel.app/"
-    },
-    {
-    title: "J Shop",
-    description: `I started this website as part of a graded assigment during meta front end dev course. 
-    Being very pleased with the result, I decided to take the development further and transform it into 
-    a beautiful E-commerce website model. Main features: online orders, payments.`,
-    projectImage: MH,
-    logo:logoMG,
-    stiker: stiker2,
-    stikerClass: 'projectPointer',
-    link:"https://little-lemon-6k6k-patrisialorenaschones-projects.vercel.app/"
+    link:"https://oldgram-alpha.vercel.app/"
     },
     {
     title: "Little Lemon Restaurant",
     description: `I started this website as part of a graded assigment during "Meta Frontend Developer" course. 
-    Being very pleased with the result, I decided to take the development further and transform it into 
-    a beautiful web aplication model. Main features: online table booking, booking management. `,
+    Being very pleased with the result, I decided to take the development further and transform it into a beautiful web aplication model.`,
+    features:`online table booking, booking management, client-side routing, carousel `,
     projectImage: LL,
     logo:logoLL,
     stiker: stiker3,
@@ -83,13 +90,16 @@ export const Carousel=() =>{
           <div className={lightMode ? 'carouselCard' : 'carouselCard carouselCardDark'}>
             <img className='cardLogo' height={80} src={project.logo} alt='website logo'/>
             <h2>{project.title}</h2>
+            <div>
             <p>{project.description}</p>
+            <p><span>Main features: </span>{project.features}</p>
+            </div>
             <a target='blank' href={project.link}><button className='my-btn'>Go to the website</button></a>
             <img className={project.stikerClass} height={150} src={project.stiker} alt="Patricia Lorena stiker" />
           </div>
           <div style={{position:"relative", margin:"auto"}}>
-            <img src={Macbook} className={lightMode ? 'carouselImage' : "carouselImageDark"}   alt="Project" />
-            <img className='ProjectGif' src={project.projectImage} alt="" />
+            <img src={project.logo == logoOG ? Iphone : Macbook} className={lightMode ? 'carouselImage' : "carouselImageDark"}   alt="Project" />
+            <img className={project.logo == logoOG ? 'ProjectGifPhone' : 'ProjectGif'} src={project.projectImage} alt="" />
           </div>
         </div>
     )})

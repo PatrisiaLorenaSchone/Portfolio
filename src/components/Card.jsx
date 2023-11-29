@@ -4,6 +4,7 @@ import {useEffect} from "react"
 import certificate1 from "../assets/certificate1.png";
 import certificate2 from "../assets/certificate2.jpg";
 import certificate3 from "../assets/certificate3.png";
+import certificate4 from "../assets/certificate4.png";
 import VanillaTilt from "vanilla-tilt"
 
 let data = [
@@ -23,21 +24,21 @@ let data = [
         link: "https://skl.sh/44fYL3M",
         border: "2px solid green"
     },
-    {title: "React Basics - React Advanced. Scrimba",
+    {title: "Frontend Developer Career Path",
     id: 3,
         description: "",
-        image: certificate2,
+        image: certificate3,
         button: {backgroundColor: "#712CF9"},
-        link: "",
-        border: "2px solid #0d6efd"
+        link: "https://scrimba.com/certificate/uaYvYzfK/gfrontend",
+        border: "3px solid #712CF9"
     },
     {title: "React Native Specialization",
     id: 4,
         description: "",
-        image: certificate3,
+        image: certificate4,
         button: {backgroundColor: "#6c757d"},
         link: "",
-        border: "2px solid #0d6efd"
+        border: "3px solid #6c757d"
     }
     ]; 
 

@@ -26,7 +26,7 @@ export const Skills = ()=>{
                 <div className="skillsCard">
                 <ul>
                   <li><b>Fundamentals: </b>HTML, CSS, JavaScript</li>
-                  <li><b>Libraries: </b>React.js</li>
+                  <li><b>Libraries: </b>React.js, React-Router</li>
                   <li><b>Frameworks</b>BootStrap</li>
                   <li><b>Design: </b>Figma, Ui-Ux Design</li>
                   <li><b>Extra: </b>GitHUB, VisualStudio</li>

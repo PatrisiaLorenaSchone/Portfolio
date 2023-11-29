@@ -194,7 +194,7 @@ return(
     onChange={handleChange}
     id="agreement" 
     required/>
-    <label for="agreement"  className="agreement">
+    <label htmlFor="agreement"  className="agreement">
       I understand that by submitting this form the information I provide will be used by Patricia Schone in order to contact me in the future
     </label>
   </div>
