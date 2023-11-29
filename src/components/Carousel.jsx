@@ -31,28 +31,28 @@ export const Carousel=() =>{
     link:"https://mangata-gallo-three.vercel.app/"
     },
     {
-    title: "Schone MobelHaus",
-    description: `This is the first website I made. 
-    I made it in the classic Beginner manner using only CSS, HTML and Vanilla Javascript. 
-    For the design I found inspiration in the company story and I tried to express the joy of a new begining.`,
-    features:`form integration`,
-    projectImage: MH,
-    logo:logoMH,
-    stiker: stiker1,
-    stikerClass: 'projectWave',
-    link:"https://xn--schnembelhaus-kmbd.com/index.html"
-    },
-    {
     title: "Instagram Clone",
     description: `This is Instagram with a twist, where every post is a work of art. 
     The ui was inspired by one of the solo projects I made at Scrimba to whitch I added the functionalities and the complete design.`,
     features:`conection to the Firebase Database, user authentification, search input, client-side routing`,
     projectImage: OG,
     logo:logoOG,
-    stiker: stiker2,
-    stikerClass: 'projectPointer',
+    stiker: stiker1,
+    stikerClass: 'projectWave',
     link:"https://oldgram-alpha.vercel.app/"
     },
+    {
+      title: "Schone MobelHaus",
+      description: `This is the first website I made. 
+      I made it in the classic Beginner manner using only CSS, HTML and Vanilla Javascript. 
+      For the design I found inspiration in the company story and I tried to express the joy of a new begining.`,
+      features:`form integration`,
+      projectImage: MH,
+      logo:logoMH,
+      stiker: stiker2,
+      stikerClass: 'projectPointer',
+      link:"https://xn--schnembelhaus-kmbd.com/index.html"
+      },
     {
     title: "Little Lemon Restaurant",
     description: `I started this website as part of a graded assigment during "Meta Frontend Developer" course. 

@@ -568,8 +568,8 @@ iframe{
   padding: 0 50px;
 }
 .carouselCard h2{
-  padding-top: 55px;
-  padding-bottom: 0px;
+  margin-top: 80px;
+  padding: 0px;
 }
 .carouselCard button{
   margin: 0 30px;
@@ -1045,16 +1045,14 @@ ul h3{
   position: absolute;
   right: -150px;
 }
-.projectPointer{
-  position: absolute;
-  bottom: -35px;
-  left: -100px;
-  filter: drop-shadow(5px 5px 60px rgba(255, 255, 255, 0.5));
-}
+
 .projectTalking{
   position: absolute;
   top: -150px;
   filter: drop-shadow(5px 5px 60px rgba(255, 255, 255, 0.3));
+}
+.projectPointer{
+  display: none;
 }
 .envelopeStiker{
   margin: auto;
@@ -1300,15 +1298,14 @@ ul h3{
     height: 100px;
     top: 100px;
 }
-  .projectPointer{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 130px;
-  }}
+}
   @media only screen and (max-width: 400px){
     .carouselContainer{
       width: 100%;
+    }
+    .carouselCard h2{
+      font-size: 1.2rem;
+      padding: 0%;
     }
   }
 
