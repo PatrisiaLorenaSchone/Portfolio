@@ -1,6 +1,5 @@
 //Card
-
-import {useEffect} from "react"
+import React from "react";
 import certificate1 from "../assets/certificate1.png";
 import certificate2 from "../assets/certificate2.jpg";
 import certificate3 from "../assets/certificate3.png";
@@ -43,7 +42,7 @@ let data = [
     ]; 
 
 export const CerificateCard = (props) =>{
-useEffect(()=>{
+React.useEffect(()=>{
     VanillaTilt.init(document.querySelectorAll(".my-card"),{
         max: 18,
         speed: 10,

@@ -362,6 +362,8 @@ iframe{
 .cardImg{
   border-radius: 3px;
 }
+
+
 /* Pink Section */
 .my-pink-section{
   display: flex;
@@ -500,18 +502,6 @@ iframe{
   }
 
 }
-.styleAdv{
-  height: 80%;
-  background-color: #006d09;
-}
-.styleInter{
-  height: 70%;
-  background-color: #2BD2FF;
-}
-.styleBeg{
-  height: 50%;
-  background-color: blueviolet;
-}
 
 
 /* Carousel */
@@ -571,15 +561,16 @@ iframe{
   margin-top: 80px;
   padding: 0px;
 }
-.carouselCard button{
+.carouselCard a{
   margin: 0 30px;
 }
-.carouselImage, .carouselImageDark{
+.carouselImage{
   position: relative;
   margin: auto;
   width: 520px;
   height: 570px;
   z-index: 7;
+  filter: drop-shadow(10px 15px 100px rgba(255, 255, 255, 0.8));
 }
 .ProjectGif{
   position: absolute;
@@ -650,32 +641,7 @@ footer{
   gap: 50px;
   padding: 5%;
 }
-.my-list{
-  align-content: center;
-  list-style: none;
-  margin: auto;
-  font-size: 0.95rem;
-  margin-top: 10px;
-}
-.my-list li::marker {
-  /* content: url(./assets/iconmonstr-rocket-10.svg); */
-  content: "- ";
-  color: #3d96e9;
-  font-weight: bolder;
-  font-size: 1.1em;
-}
-.my-list a{
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  font-weight: lighter;
-  border-bottom: 1.8px solid rgba(255, 255, 255, 0.1);
-  transition: 0.5s;
-}
-.my-list a:hover{
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 0.8px;
-}
+
 .formAfter{
   display: flex;
   flex-direction: column;
@@ -789,47 +755,6 @@ textarea{
 }
 .valid{
   color: #006d09;
-}
-/* info page*/
-.infoPage{
-  margin-top: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px
-}
-.infoCard{
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-  background-color: lavender;
-  margin:auto;
-  border-radius: 5px;
-  border: 1px solid plum;
-  padding: 50px 23px 20px 23px;
-  width: 80%;
-  max-width: 1000px;
-}
-.infoCard p{
-  text-align: left;
-}
-.infoCard h3, .infoCard h4{
-  display: flex;
-  align-items: center;
-  gap:10px;
-  color:#232323;
-  justify-content: center;
-  padding: 10px;
-}
-.infoCard b {
-  color: rgb(99, 58, 99);
-  text-decoration: underline;
-}
-.infoCard strong{
-  font-weight: 500;
-  color: rgb(143, 9, 143)
-}
-.infoCard button{
-  margin-top: 30px;
 }
 /* media -to be reviewd*/
 
@@ -964,9 +889,6 @@ ul h3{
   filter: drop-shadow(0px 15px 35px rgba(190, 255, 248, 0.5));
   color: rgb(230, 230, 230);
 }
-.carouselImageDark{
-  filter: drop-shadow(10px 15px 100px rgba(251, 208, 255, 0.8));
-}
 .my-cardDark:hover{
   background-color: rgba(29, 29, 29, 0.7); 
   filter: drop-shadow(8px 8px 50px rgba(189, 234, 255, 0.8));
@@ -994,6 +916,8 @@ ul h3{
   color: rgb(230, 230, 230);
   filter: drop-shadow(2px 2px 80px rgba(255, 247, 129, 0.3));
 } */
+
+
 /* stikers */
 .hello{
   position: absolute;
@@ -1296,7 +1220,7 @@ ul h3{
     position: absolute;
     left: 0;
     height: 100px;
-    top: 100px;
+    top: 80px;
 }
 }
   @media only screen and (max-width: 400px){
@@ -1306,6 +1230,9 @@ ul h3{
     .carouselCard h2{
       font-size: 1.2rem;
       padding: 0%;
+    }
+    .carouselCard p{
+      padding: 20px;
     }
   }
 
@@ -1340,13 +1267,13 @@ ul h3{
       padding-right: 8%;
     }
     .hello{
-      top: 28%;
+      top: 30%;
       height: 130px;
     }
     .my-main-title{
       font-size: 2.2em;
     }
-    .carouselImage, .carouselImageDark{
+    .carouselImage{
       margin: auto;
       width: 330px;
       height: 360px;

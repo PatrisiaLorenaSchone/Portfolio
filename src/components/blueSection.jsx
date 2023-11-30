@@ -1,4 +1,4 @@
-//bluesection
+//The Section with the certificates
 import React from "react"
 import {CerificateCard} from "./Card.jsx"
 import stiker from "../assets/graduate.png"

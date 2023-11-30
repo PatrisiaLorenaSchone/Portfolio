@@ -1,7 +1,6 @@
 //app
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-// import Footer from "./components/Footer"
 import { useState} from "react";
 import './App.css';
 import Homepage from './pages/Homepage.jsx';

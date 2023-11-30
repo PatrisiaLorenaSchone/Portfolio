@@ -87,19 +87,19 @@ export const Carousel=() =>{
   let projects = projectData.map(project => {
     return(
       <div className='carouselItem'>
-          <div className={lightMode ? 'carouselCard' : 'carouselCard carouselCardDark'}>
-            <img className='cardLogo' height={80} src={project.logo} alt='website logo'/>
+          <div className='carouselCard'>
+            <img className='cardLogo' height={65} src={project.logo} alt='website logo'/>
             <h2>{project.title}</h2>
             <div>
             <p>{project.description}</p>
             <p><span>Main features: </span>{project.features}</p>
             </div>
-            <a target='blank' href={project.link}><button className='my-btn'>Go to the website</button></a>
-            <img className={project.stikerClass} height={150} src={project.stiker} alt="Patricia Lorena stiker" />
+            <a target='blank' href={project.link} className='my-btn'>Go to the website</a>
+            <img src={project.stiker} className={project.stikerClass} height={150}  alt="Patricia Lorena stiker" />
           </div>
           <div style={{position:"relative", margin:"auto"}}>
-            <img src={project.logo == logoOG ? Iphone : Macbook} className={lightMode ? 'carouselImage' : "carouselImageDark"}   alt="Project" />
-            <img className={project.logo == logoOG ? 'ProjectGifPhone' : 'ProjectGif'} src={project.projectImage} alt="" />
+            <img src={project.logo == logoOG ? Iphone : Macbook} className='carouselImage'  alt="Project" />
+            <img src={project.projectImage} className={project.logo == logoOG ? 'ProjectGifPhone' : 'ProjectGif'}  alt="" />
           </div>
         </div>
     )})
