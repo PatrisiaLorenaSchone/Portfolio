@@ -14,10 +14,8 @@ import { useState } from 'react';
 import stiker1 from '../assets/wave.png';
 import stiker2 from '../assets/pointer.png';
 import stiker3 from '../assets/talking1.png';
-import { ThemeContext } from '../App';
 
 export const Carousel=() =>{
-  let {lightMode} = React.useContext(ThemeContext)
   const projectData = [
     {
     title: "Beauty products Shop",
@@ -56,7 +54,7 @@ export const Carousel=() =>{
     {
     title: "Little Lemon Restaurant",
     description: `I started this website as part of a graded assigment during "Meta Frontend Developer" course. 
-    Being very pleased with the result, I decided to take the development further and transform it into a beautiful web aplication model.`,
+    Being very pleased with the result, I decided to take the development further and transform it into a beautiful web application model.`,
     features:`online table booking, booking management, client-side routing, carousel `,
     projectImage: LL,
     logo:logoLL,
@@ -99,7 +97,7 @@ export const Carousel=() =>{
           </div>
           <div style={{position:"relative", margin:"auto"}}>
             <img src={project.logo == logoOG ? Iphone : Macbook} className='carouselImage'  alt="Project" />
-            <img src={project.projectImage} className={project.logo == logoOG ? 'ProjectGifPhone' : 'ProjectGif'}  alt="" />
+            <img src={project.projectImage} className={project.logo == logoOG ? 'ProjectGifPhone' : 'ProjectGif'}  alt="a gif representation of the project" />
           </div>
         </div>
     )})

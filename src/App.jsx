@@ -15,16 +15,7 @@ export default function App() {
   function toggleTheme(){
     setLightMode(prevMode => !prevMode)
   }
-  const [loading, setLoading] = useState(true)
-  const loadingScreen = document.getElementById("loading");
-  if(loadingScreen){
-    setTimeout(()=>{
-      loadingScreen.style.display = "none";
-      setLoading(false)
-    }, 2500)
-  }
   return (
-    !loading &&
     <BrowserRouter>
     <ThemeContext.Provider value={{lightMode, toggleTheme}}>
       <div className={ lightMode ? "App" : "App AppDark"}>
