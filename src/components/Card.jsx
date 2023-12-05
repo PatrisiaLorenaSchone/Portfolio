@@ -1,5 +1,6 @@
 //Card
 import React from "react";
+import { motion } from "framer-motion"
 import certificate1 from "../assets/certificate1.png";
 import certificate2 from "../assets/certificate2.jpg";
 import certificate3 from "../assets/certificate3.png";
@@ -42,6 +43,7 @@ let data = [
     ]; 
 
 export const CerificateCard = (props) =>{
+    
 React.useEffect(()=>{
     VanillaTilt.init(document.querySelectorAll(".my-card"),{
         max: 18,
@@ -50,12 +52,23 @@ React.useEffect(()=>{
 })
     let certificates = data.map(certificate => {
         return (
-            <div className={props.lightMode ? "my-card" : "my-cardDark my-card"} key={certificate.id}>
+            <motion.div 
+            initial={{
+                x: -100,
+            }}
+            whileInView={{
+                x: 0,
+            }}
+            transition={{
+                duration: 0.5,
+                ease: "easeInOut",
+            }}
+            className={props.lightMode ? "my-card" : "my-cardDark my-card"} key={certificate.id}>
                 <img className="cardImg" style={{border: certificate.border}} height={"200px"} alt="diploma" src={certificate.image}></img>
                 <h3 className="card-title">{certificate.title}</h3>
                 <p>{certificate.description}</p>
                 <a target="blank" href={certificate.link}><button className="card-btn" style={certificate.button}>See Credentials</button></a>
-            </div>
+            </motion.div>
         )});
 return (
     <div className="my-card-container">

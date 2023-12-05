@@ -535,7 +535,6 @@ iframe{
   gap: 50px;
   align-items: center;
   justify-content: space-between;
-  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 .carouselItem span{
   font-weight: 650;
@@ -777,49 +776,7 @@ ul h3{
   50%  {background-color: rgb(142, 142, 255);}
   100% {background-color: rgb(184, 255, 184);}
 }
-@keyframes myAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateX(-250px);
-	}
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateX(0);
-	}
-
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateX(-68px);
-	}
-
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateX(-28px);
-	}
-
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateX(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-}
 @keyframes shake {
 	0%,
 	100% {
@@ -950,9 +907,9 @@ ul h3{
   /* filter: drop-shadow(5px 5px 50px rgba(255, 255, 255, 0.5)); */
   transition: 0.5s;
 }
-.graduate:hover{
+/* .graduate:active{
   transform: translateY(20px);
-}
+} */
 .graduatePointing{
   position: absolute;
   bottom: -2px;
