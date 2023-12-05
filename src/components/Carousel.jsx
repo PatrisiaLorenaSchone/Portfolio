@@ -1,5 +1,6 @@
 //carousel
 import React from 'react';
+import {motion} from "framer-motion"
 import Macbook from '../assets/Macbook1.png';
 import Iphone from '../assets/iphone.png'
 import MH from '../assets/MHgif.gif'
@@ -40,7 +41,7 @@ export const Carousel=() =>{
     link:"https://oldgram-alpha.vercel.app/"
     },
     {
-      title: "Schone MobelHaus",
+    title: "Schone MobelHaus",
       description: `This is the first website I made. 
       I made it in the classic Beginner manner using only CSS, HTML and Vanilla Javascript. 
       For the design I found inspiration in the company story and I tried to express the joy of a new begining.`,
@@ -85,7 +86,8 @@ export const Carousel=() =>{
   let projects = projectData.map(project => {
     return(
       <div className='carouselItem'>
-          <div className='carouselCard'>
+          <motion.div
+           className='carouselCard'>
             <img className='cardLogo' height={65} src={project.logo} alt='website logo'/>
             <h2>{project.title}</h2>
             <div>
@@ -94,7 +96,7 @@ export const Carousel=() =>{
             </div>
             <a target='blank' href={project.link} className='my-btn'>Go to the website</a>
             <img src={project.stiker} className={project.stikerClass} height={150}  alt="Patricia Lorena stiker" />
-          </div>
+          </motion.div>
           <div style={{position:"relative", margin:"auto"}}>
             <img src={project.logo == logoOG ? Iphone : Macbook} className='carouselImage'  alt="Project" />
             <img src={project.projectImage} className={project.logo == logoOG ? 'ProjectGifPhone' : 'ProjectGif'}  alt="a gif representation of the project" />

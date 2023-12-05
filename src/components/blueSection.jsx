@@ -13,13 +13,16 @@ export default function BlueSection(){
         <div>
         <motion.img
             initial={{
-                y: 300,
+                y: 200,
             }}
             whileInView={{
                 y: 0
             }}
+            whileHover={{
+                y: 20,
+            }}
             exit={{
-                y: 300
+                y: 200
             }}
             transition={{
                 duration: 0.3,
