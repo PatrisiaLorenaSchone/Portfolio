@@ -85,7 +85,7 @@ export const Carousel=() =>{
 
   let projects = projectData.map(project => {
     return(
-      <div className='carouselItem'>
+      <div className='carouselItem' key={project.title}>
           <motion.div
            className='carouselCard'>
             <img className='cardLogo' height={65} src={project.logo} alt='website logo'/>

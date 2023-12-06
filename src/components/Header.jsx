@@ -17,7 +17,7 @@ export const Header = () =>{
                     <h1 className="my-main-title"><span className="noWrap">Patricia-Lorena</span> Schone</h1>
                     <h2 className="headerSubtitle">Design and Development</h2>
                     <div className="candleStikerText">
-                        <p>Hello and wellcome to my personal website! <br/>Here you can find informations about my overall competences and take a look at the projects I've been working on lately.
+                        <p>Hello and welcome to my personal website! <br/>Here you can find informations about my overall competences and take a look at the projects I've been working on lately.
                            But first, let me introduce myself. I'm Patricia, a front-end developer and designer specialised in React. 
                            I am open for long-term job offers as well as for short-term projects collaborations.</p>
                     {!lightMode && <img className="candle" height={150} width={110} src={candle} alt="Patricia Lorena as a cartoon holding a candle"/>}
