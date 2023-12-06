@@ -21,7 +21,7 @@ export const Carousel=() =>{
     {
     title: "Beauty products Shop",
     description: `I designed and developed this E-commerce website because I wanted to practice the integration of client-side routing. `,
-    features:`conection to the Firebase Database, products sorting and filtering, 
+    features:`connection to the Firebase Database, product sorting and filtering, 
     dynamic shopping chart, client-side routing`,
     projectImage: MG,
     logo:logoMG,
@@ -32,8 +32,8 @@ export const Carousel=() =>{
     {
     title: "Instagram Clone",
     description: `This is Instagram with a twist, where every post is a work of art. 
-    The ui was inspired by one of the solo projects I made at Scrimba to whitch I added the functionalities and the complete design.`,
-    features:`conection to the Firebase Database, user authentification, search input, client-side routing`,
+    The ui was inspired by one of the solo projects I made at Scrimba to which I added the functionalities and the complete design.`,
+    features:`connection to the Firebase Database, user authentification, search input, client-side routing`,
     projectImage: OG,
     logo:logoOG,
     stiker: stiker1,
@@ -44,7 +44,7 @@ export const Carousel=() =>{
     title: "Schone MobelHaus",
       description: `This is the first website I made. 
       I made it in the classic Beginner manner using only CSS, HTML and Vanilla Javascript. 
-      For the design I found inspiration in the company story and I tried to express the joy of a new begining.`,
+      For the design, I found inspiration in the company story and I tried to express the joy of a new beginning.`,
       features:`form integration`,
       projectImage: MH,
       logo:logoMH,
@@ -54,7 +54,7 @@ export const Carousel=() =>{
       },
     {
     title: "Little Lemon Restaurant",
-    description: `I started this website as part of a graded assigment during "Meta Frontend Developer" course. 
+    description: `I started this website as part of a graded assignment during the "Meta Frontend Developer" course. 
     Being very pleased with the result, I decided to take the development further and transform it into a beautiful web application model.`,
     features:`online table booking, booking management, client-side routing, carousel `,
     projectImage: LL,
