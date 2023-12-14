@@ -7,10 +7,12 @@ import MH from '../assets/MHgif.gif'
 import LL from '../assets/LLgif.gif'
 import OG from '../assets/OG.gif'
 import MG from '../assets/MGgif.gif'
+import FN from '../assets/FNgif.gif'
 import logoMH from '../assets/logo.jpeg'
 import logoMG from '../assets/logoMG.png'
 import logoOG from '../assets/logoOG.png'
 import logoLL from '../assets/logoLine.png'
+import logoFN from '../assets/logoFN.png'
 import { useState } from 'react';
 import stiker1 from '../assets/wave.png';
 import stiker2 from '../assets/pointer.png';
@@ -33,7 +35,7 @@ export const Carousel=() =>{
     title: "Instagram Clone",
     description: `This is Instagram with a twist, where every post is a work of art. 
     The ui was inspired by one of the solo projects I made at Scrimba to which I added the functionalities and the complete design.`,
-    features:`connection to the Firebase Database, user authentification, search input, client-side routing`,
+    features:`connection to the Firebase Database, user authentication, search input, client-side routing`,
     projectImage: OG,
     logo:logoOG,
     stiker: stiker1,
@@ -62,6 +64,16 @@ export const Carousel=() =>{
     stiker: stiker3,
     stikerClass: 'projectTalking',
     link:"https://little-lemon-6k6k-patrisialorenaschones-projects.vercel.app/"
+    },
+    {
+    title: "FlexNet",
+    description: `This is a website where you can find information about your favourite movies. `,
+    features:`Data fetching, API integration, search input `,
+    projectImage: FN,
+    logo:logoFN,
+    stiker: stiker2,
+    stikerClass: 'projectPointer',
+    link:"https://flex-net.vercel.app/"
     }
     ]
   const [index, setIndex] = useState(0);
