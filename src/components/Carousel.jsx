@@ -24,7 +24,7 @@ export const Carousel=() =>{
     title: "Beauty products Shop",
     description: `I designed and developed this E-commerce website because I wanted to practice the integration of client-side routing. `,
     features:`connection to the Firebase Database, product sorting and filtering, 
-    dynamic shopping chart, client-side routing`,
+    dynamic shopping chart, client-side routing, responsive design`,
     projectImage: MG,
     logo:logoMG,
     stiker: stiker2,
@@ -35,7 +35,7 @@ export const Carousel=() =>{
     title: "Instagram Clone",
     description: `This is Instagram with a twist, where every post is a work of art. 
     The ui was inspired by one of the solo projects I made at Scrimba to which I added the functionalities and the complete design.`,
-    features:`connection to the Firebase Database, user authentication, search input, client-side routing`,
+    features:`connection to the Firebase Database, user authentication, search input, client-side routing, responsive design`,
     projectImage: OG,
     logo:logoOG,
     stiker: stiker1,
@@ -43,22 +43,21 @@ export const Carousel=() =>{
     link:"https://art-socialmedia-alpha.vercel.app/"
     },
     {
-    title: "Schone MobelHaus",
-      description: `This is the first website I made. 
-      I made it in the classic Beginner manner using only CSS, HTML and Vanilla Javascript. 
-      For the design, I found inspiration in the company story and I tried to express the joy of a new beginning.`,
-      features:`form integration`,
+    title: "Schones MobelHaus",
+      description: `This is the first website I made. For the design, I found inspiration in the company story
+       and I tried to express the joy of a new beginning. SchonesMobelHaus is a moving company based in Germany`,
+      features:`form integration, animations, responsive design`,
       projectImage: MH,
       logo:logoMH,
       stiker: stiker2,
       stikerClass: 'projectPointer',
-      link:"https://xn--schnembelhaus-kmbd.com/index.html"
+      link:"https://schones-mobel-haus-patrisialorenaschones-projects.vercel.app/"
       },
     {
     title: "Little Lemon Restaurant",
     description: `I started this website as part of a graded assignment during the "Meta Frontend Developer" course. 
     Being very pleased with the result, I decided to take the development further and transform it into a beautiful web application model.`,
-    features:`online table booking, booking management, client-side routing, carousel `,
+    features:`online table booking, booking management, client-side routing, carousel, responsive design `,
     projectImage: LL,
     logo:logoLL,
     stiker: stiker3,
@@ -67,8 +66,8 @@ export const Carousel=() =>{
     },
     {
     title: "FlexNet",
-    description: `This is a website where you can find information about your favourite movies. `,
-    features:`Data fetching, API integration, search input `,
+    description: `This is a website where you can find information about your favourite movies and watch the latest trailers`,
+    features:`Data fetching, API integration, search input, responsive design `,
     projectImage: FN,
     logo:logoFN,
     stiker: stiker2,
