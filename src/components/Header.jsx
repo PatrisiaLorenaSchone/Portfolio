@@ -3,7 +3,8 @@
 import React from 'react';
 import hey from "../assets/hey1.png"
 import candle from "../assets/holdingCandle.png"
-import cv from "../assets/cvPatriciaSchone.pdf"
+// import cv from "../assets/cvPatriciaSchone.pdf"
+import cv from "../assets/CV.PatriciaSchone.pdf"
 import { ThemeContext } from "../App"
 
 export const Header = () =>{
