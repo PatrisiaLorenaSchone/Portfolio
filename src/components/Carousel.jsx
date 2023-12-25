@@ -40,7 +40,7 @@ export const Carousel=() =>{
     logo:logoOG,
     stiker: stiker1,
     stikerClass: 'projectWave',
-    link:"https://oldgram-n46m4fdat-patrisialorenaschones-projects.vercel.app/"
+    link:"https://oldgram-ten.vercel.app/"
     },
     {
     title: "Schones MobelHaus",
