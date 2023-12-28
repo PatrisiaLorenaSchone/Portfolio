@@ -42,7 +42,7 @@ function isFormValid(){
     &&isLastNameValid
     && isEmailValid
     && isTelValid
-    && data.message.length > 5
+    && data.message.length >= 5
     && data.agreement
     && data.jobType != ""
     ){
@@ -60,7 +60,7 @@ function isEmailValid(){
   }
 }
 function isTelValid(){
-  if(data.tel.length > 3 && data.tel.match(/^[\+]?[(]?[0-9]{2}[)]?[-\s\.]?[0-9]{2}[-\s\.]?[0-9]{1,6}$/)){
+  if(data.tel.length > 3 && data.tel.match(/^[\+]?[(]?[0-9]{0,3}[)]?[-\s\.]?[0-9]{0,3}[-\s\.]?[0-9]{1,7}$/)){
     return true
   } else {
     return false
